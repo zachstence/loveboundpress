@@ -3,31 +3,36 @@
 	import { Etsy, Instagram, Tiktok } from '@steeze-ui/simple-icons';
 </script>
 
-{#snippet linkIcon({ href, src, label }: { href: string; src: IconSource; label: string })}
+{#snippet link({ href, iconSrc, label }: { href: string; iconSrc: IconSource; label: string })}
 	<a
 		{href}
 		target="_blank"
-		aria-label={label}
-		class="block h-full rounded-md p-2 transition-all hover:bg-black/5"
+		class="flex h-12 w-full items-center justify-start gap-4 rounded-md border border-[#ede7d9] bg-[#ede7d9] px-4 py-3 transition-all hover:bg-[#ede7d9]/50"
 	>
-		<Icon {src} />
+		<Icon src={iconSrc} class="size-6" />
+		{label}
 	</a>
 {/snippet}
 
-<main class="flex h-screen w-screen flex-col items-center justify-center bg-[#d7d2cf]">
-	<h1 class="text-center text-4xl font-semibold">Lovebound Press</h1>
-	<span class="mt-2 text-lg">Coming soon!</span>
-	<div class="mt-12 flex h-12 items-center gap-4">
-		{@render linkIcon({ label: 'TikTok', src: Tiktok, href: 'https://tiktok.com/@loveboundpress' })}
-		{@render linkIcon({
-			label: 'Etsy',
-			src: Etsy,
-			href: 'https://www.etsy.com/shop/loveboundpress'
-		})}
-		{@render linkIcon({
-			label: 'Instagram',
-			src: Instagram,
-			href: 'https://www.instagram.com/lovebound.press/'
-		})}
-	</div>
-</main>
+<div class="flex h-screen w-screen flex-col items-center justify-center bg-[#fdf9f0]">
+	<main class="flex h-screen max-w-3xl flex-col items-center justify-center gap-12">
+		<h1 class="text-center text-4xl font-semibold">Lovebound Press</h1>
+		<div class="flex w-full max-w-52 flex-col items-center gap-4">
+			{@render link({
+				label: '@loveboundpress',
+				iconSrc: Tiktok,
+				href: 'https://tiktok.com/@loveboundpress'
+			})}
+			{@render link({
+				label: 'LoveboundPress',
+				iconSrc: Etsy,
+				href: 'https://www.etsy.com/shop/loveboundpress'
+			})}
+			{@render link({
+				label: '@lovebound.press',
+				iconSrc: Instagram,
+				href: 'https://www.instagram.com/lovebound.press/'
+			})}
+		</div>
+	</main>
+</div>
