@@ -17,11 +17,11 @@
 	<a
 		{href}
 		target="_blank"
-		class="flex w-full items-center justify-start gap-3 rounded-md border border-[#ede7d9] bg-[#ede7d9] px-3 py-2 transition-all hover:bg-[#ede7d9]/50 sm:gap-4 sm:px-4 sm:py-3"
+		class="flex w-full items-center justify-start gap-4 rounded-md border border-[#ede7d9] bg-[#ede7d9] px-4 py-3 transition-all hover:bg-[#ede7d9]/50"
 		aria-label={site}
 		title={site}
 	>
-		<Icon src={iconSrc} class="size-4 sm:size-6" />
+		<Icon src={iconSrc} class="size-6" />
 		{label}
 	</a>
 {/snippet}
@@ -31,7 +31,7 @@
 >
 	<main class="flex h-screen w-full flex-col items-center justify-center gap-12">
 		<img src="/logo.svg" alt="Lovebound Press" class="w-full max-w-96" />
-		<div class="flex w-full max-w-64 flex-col items-center gap-4 text-sm sm:text-base">
+		<div class="flex w-full max-w-80 flex-col items-center gap-4 text-base">
 			{@render link({
 				site: 'Etsy',
 				iconSrc: Etsy,
