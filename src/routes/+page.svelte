@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
-	import { Etsy, Tiktok } from '@steeze-ui/simple-icons';
+	import { Etsy, Instagram, Tiktok } from '@steeze-ui/simple-icons';
 </script>
 
 {#snippet linkIcon({ href, src, label }: { href: string; src: IconSource; label: string })}
@@ -23,6 +23,11 @@
 			label: 'Etsy',
 			src: Etsy,
 			href: 'https://www.etsy.com/shop/loveboundpress'
+		})}
+		{@render linkIcon({
+			label: 'Instagram',
+			src: Instagram,
+			href: 'https://www.instagram.com/lovebound.press/'
 		})}
 	</div>
 </main>
