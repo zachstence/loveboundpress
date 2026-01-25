@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: pierson-thin;
+  src: url('/fonts/Pierson/Pierson-Thin.woff') format('woff');
+}
+
+@font-face {
+	font-family: perison-light;
+	src: url('/fonts/Pierson/Pierson-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: pierson-regular;
+	src: url('/fonts/Pierson/Pierson-Regular.woff') format('woff');
+}
+
+* {
+  font-family: montserrat;
+}
