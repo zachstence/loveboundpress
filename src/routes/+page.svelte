@@ -36,7 +36,7 @@
 				site: 'Etsy',
 				iconSrc: Etsy,
 				label: 'LoveboundPress',
-				href: 'https://www.etsy.com/shop/loveboundpress'
+				href: 'https://www.etsy.com/shop/LoveboundPress'
 			})}
 			{@render link({
 				site: 'TikTok',
