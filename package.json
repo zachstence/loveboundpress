@@ -19,7 +19,7 @@
 		"@steeze-ui/simple-icons": "^1.10.1",
 		"@steeze-ui/svelte-icon": "^1.6.2",
 		"@sveltejs/adapter-cloudflare": "^7.2.5",
-		"@sveltejs/kit": "^2.49.1",
+		"@sveltejs/kit": "^2.52.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/node": "^22",
